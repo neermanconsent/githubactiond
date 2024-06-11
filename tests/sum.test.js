@@ -6,15 +6,11 @@ function sum(a, b) {
   module.exports = sum;
   
   // sum.test.js
-  const sum = require('./sum');
+  const sumFunction = require('./sum');
+
+test('adds 1 + 2 to equal 3', () => {
+  expect(sumFunction(1, 2)).toBe(3);
+});
   
-  test('adds 1 + 2 to equal 3', () => {
-    // Define the function directly here
-    function sum(a, b) {
-      return a + b;
-    }
-  
-    // Call the function and assert the result
-    expect(sum(1, 2)).toBe(3);
-  });
+    
   
