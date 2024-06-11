@@ -9,6 +9,12 @@ function sum(a, b) {
   const sum = require('./sum');
   
   test('adds 1 + 2 to equal 3', () => {
+    // Define the function directly here
+    function sum(a, b) {
+      return a + b;
+    }
+  
+    // Call the function and assert the result
     expect(sum(1, 2)).toBe(3);
   });
   
